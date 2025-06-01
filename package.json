@@ -1,0 +1,19 @@
+{
+  "name": "storylens",
+  "version": "1.0.0",
+  "description": "Multi-modal Photo Story Generator - Upload photos to generate AI-powered stories with voice narration",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && node index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["AI", "story-generation", "image-to-text", "TTS", "multimodal"],
+  "author": "StoryLens Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+} 
